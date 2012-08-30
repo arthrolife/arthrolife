@@ -13,5 +13,5 @@ server.set 'view engine' \jade
 
 server.get \/ (request, response) -> response.render \index
 
-server.listen 8080
+server.listen 8000
 
