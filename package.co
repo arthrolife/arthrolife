@@ -1,0 +1,13 @@
+name: \arthrolife
+author: 'Justin Freitag'
+description: 'arthrolife server'
+main: \lib/arthrolife
+version: \0.0.1
+dependencies:
+  express: \~2.5
+  jade: \~0.20
+  stylus: \~0.28
+engines:
+  node: \~0.8
+private: true
+

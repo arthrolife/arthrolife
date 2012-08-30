@@ -1,0 +1,17 @@
+express = require \express
+stylus  = require \stylus
+
+process.on \uncaughtException -> console.log it
+
+server = express.createServer!
+server.use express.bodyParser!
+server.use server.router
+server.use stylus.middleware src: "#__dirname/../public"
+server.use express.static "#__dirname/../public"
+server.set \views "#__dirname/../views"
+server.set 'view engine' \jade
+
+server.get \/ (request, response) -> response.render \index
+
+server.listen 8080
+
