@@ -194,9 +194,9 @@ section
   height 300px
   right -300px
   top 110px
-  transition: right 2s;
-  -moz-transition: right 2s;
-  -webkit-transition: right 2s;
+  transition right 2s
+  -moz-transition right 2s
+  -webkit-transition right 2s
 
 .ask-show
   right 10px !important
@@ -206,26 +206,32 @@ section
   float left
   width 300px
   padding-top 5px
-  background-image: linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
-  background-image: -o-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
-  background-image: -moz-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
-  background-image: -webkit-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
-  background-image: -ms-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
+  background-image linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  background-image -o-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  background-image -moz-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  background-image -webkit-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  background-image -ms-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
   p
     padding 10px
     color #fff
   input[type="text"]
-    width 265px
+    width 268px
     padding 5px
     margin-left 10px
+    border 1px solid lightsteelblue
+    border-radius 4px
   textarea
-    width 265px
+    width 268px
     padding 5px
     margin-left 10px
+    border 1px solid lightsteelblue
+    border-radius 4px
   .button
     float right
+    border-radius 4px
     color #fff
-    padding 5px
+    border 1px solid lightsteelblue
+    padding 5px 8px 5px 8px
     margin 10px
 
 #ask-button
