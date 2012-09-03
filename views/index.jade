@@ -10,10 +10,14 @@ body
       .logo &#x21;
       h1 arthrolife.
       ul
-        li Conditions
-        li Treatments
-        li Clinics
-        li Research
+        li
+          a(href="#conditions") Conditions
+        li
+          a(href="#treatments") Treatments
+        li
+          a(href="#clinics") Clinics
+        li
+          a(href="#research") Research
       h2 Take the next step in</br>&nbsp;&nbsp;&nbsp; arthritis management.
 
   #about-container
@@ -24,63 +28,62 @@ body
         | generation therapies for the management of musculoskeletal
         | conditions such as arthritis and tendinopathy.
 
-  #conditions-container
-    section#conditions
-      h1 Conditions
-      #col
-        h2 Arthritis <a href="#">More</a>
-        p
-          | Arthritis is a major cause of disability and chronic pain in Australia.
-          | More than 3.95 Million Australians suffer from arthritis. Up to two
-          | thirds of people suffering from osteo-arthritis are of working age.
-      #col-right
-        h2 Tendinopathy <a href="#">More</a>
-        p
-          | Tendinopathy is an overload or overuse injury resulting in tendon
-          | degeneration. Whilst previously known as tendinitis it does not
-          | typically have an inflammatory component. Tendon injuries account for
-          | a significant proportion of sport and workplace related injuries
-          | resulting in considerable morbidity.
+  section#conditions
+    h1 Conditions
+    .col
+      h2 Arthritis <a href="#">More</a>
+      p
+        | Arthritis is a major cause of disability and chronic pain in Australia.
+        | More than 3.95 Million Australians suffer from arthritis. Up to two
+        | thirds of people suffering from osteo-arthritis are of working age.
+    .col.col-right
+      h2 Tendinopathy <a href="#">More</a>
+      p
+        | Tendinopathy is an overload or overuse injury resulting in tendon
+        | degeneration. Whilst previously known as tendinitis it does not
+        | typically have an inflammatory component. Tendon injuries account for
+        | a significant proportion of sport and workplace related injuries
+        | resulting in considerable morbidity.
 
-  #treatments-container
-    section#treatments
+  section#treatments
+    a(name='treatments')
       h1 Treatments
-      #col
-        h2 Platelet-rich Plasma <a href="#">More</a>
-        p
-          | Platelet-rich Plasma (PRP) is a growth factor rich medium that is
-          | developed from your own blood. It is not synthetic. Research has
-          | shown PRP to be effective in the treatment of many musculoskeletal
-          | conditions.
-      #col-right
-        h2 Stem Cell Therapy <a href="#">More</a>
-        p
-          | Cell based therapies (including Stem Cells and Platelet-rich Plasma)
-          | offer exciting potential in treating conditions such as osteoarthritis.
-          | Adipose tissue is a rich source of adipose-derived stem cells. These
-          | cells have an ability to differentiate into cartilage cells.
+    .col
+      h2 Platelet-rich Plasma <a href="#">More</a>
+      p
+        | Platelet-rich Plasma (PRP) is a growth factor rich medium that is
+        | developed from your own blood. It is not synthetic. Research has
+        | shown PRP to be effective in the treatment of many musculoskeletal
+        | conditions.
+    .col.col-right
+      h2 Stem Cell Therapy <a href="#">More</a>
+      p
+        | Cell based therapies (including Stem Cells and Platelet-rich Plasma)
+        | offer exciting potential in treating conditions such as osteoarthritis.
+        | Adipose tissue is a rich source of adipose-derived stem cells. These
+        | cells have an ability to differentiate into cartilage cells.
 
-  #clinics-container
-    section#clinics
+  section#clinics
+    a(name='clinics')
       h1 Clinics
-      #col
-        #name1 Prahran ArthroLife – a Lifecare clinic
-        p#name2 Lifecare Prahran Sports Medicine Centre
-        p#address 316 Malvern Rd, Prahran, Vic 3181
-        #email
-          .logo &#x24;
-          p help@arthrolife.com.au
-        #phone
-          .logo &#x26;
-          p (03) 9529 8899
-        #fax
-          .logo Fax
-          p (03) 9529 4248
-      #col-right
-        iframe(width="365", height="300", frameborder="0", scrolling="no", marginheight="0", marginwidth="0", src="https://maps.google.com/maps/ms?msa=0&amp;msid=210857819210607169112.0004c8990101523c413f2&amp;ie=UTF8&amp;t=m&amp;ll=-37.84774,144.997247&amp;spn=0.002542,0.003219&amp;z=17&amp;output=embed")
+    .col
+      #name1 Prahran ArthroLife – a Lifecare clinic
+      p#name2 Lifecare Prahran Sports Medicine Centre
+      p#address 316 Malvern Rd, Prahran, Vic 3181
+      #email
+        .logo &#x24;
+        p help@arthrolife.com.au
+      #phone
+        .logo &#x26;
+        p (03) 9529 8899
+      #fax
+        .logo Fax
+        p (03) 9529 4248
+    .col.col-right
+      iframe(width="350", height="300", frameborder="0", scrolling="no", marginheight="0", marginwidth="0", src="https://maps.google.com/maps/ms?msa=0&amp;msid=210857819210607169112.0004c8990101523c413f2&amp;ie=UTF8&amp;t=m&amp;ll=-37.84774,144.997247&amp;spn=0.002542,0.003219&amp;z=17&amp;output=embed")
 
-  #research-container
-    section#research
+  section#research
+    a(name='research')
       h1 Research
 
   footer

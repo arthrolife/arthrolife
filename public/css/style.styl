@@ -35,7 +35,7 @@ html
   -webkit-font-smoothing antialiased
 
 body
-  font normal normal normal 16px 'Lucida Grande','Helvetica Neue',sans-serif
+  font normal normal normal 16px 'Lucida Grande', 'Helvetica Neue', sans-serif
 
 #about-container
   padding-top 10px
@@ -54,38 +54,37 @@ header
   background-image url('../img/knee-xray3.png')
   background-size auto 250px
   background-repeat no-repeat
-
   h1
-    font-size 3em
     float right
+    font-size 3em
     font-family 'Nunito'
     color #fff
-
   h2
-    padding-right 55px
-    padding-top 90px
     clear both
     float right
+    padding 90px 55px 0 0
     font-size 1.5em
     color #fff
-
   .logo
-    padding-top 2px
     float left
+    padding-top 2px
     color #fff
     font-family 'arthrolife'
     font-size 4em
-
   ul
-    margin-top -12px
     clear both
     float right
-
+    margin-top -12px
     li
-      color #999
-      text-align right
       float left
       padding-left 10px
+      text-align right
+      a
+        text-decoration none
+      a:link, a:visited
+        color #999
+      a:hover
+        color #fff
 
 footer
   width 800px
@@ -94,10 +93,8 @@ footer
   border-top 1px solid #ccc
   font-size 0.8em
   color #9A9EA8
-
   p
     float left
-
   .logo
     color #bbb
     float right
@@ -117,47 +114,29 @@ section
     float left
     margin-top 3px
     font-size 3em
-  #col
+  .col
     float left
-    width 47%
-    margin-top 5px
-    margin-right 20px
-    margin-left 15px
+    width 45%
+    margin 5px 20px 0 15px
     padding-bottom 15px
     h2
-      border-bottom 1px solid #EEE
       font-size 1em
+      border-bottom 1px solid #EEE
       padding-bottom 2px
       margin-bottom 5px
     p
-      padding-left 10px
       float left
       font-size 0.8em
+      padding-left 10px
     a
-      color rgb(12,131,235)
-      font-size 0.8em
       float right
-  #col-right
+      font-size 0.8em
+      color rgb(12,131,235)
+  .col-right
     float right
-    width 47%
-    margin-top 5px
-    padding-bottom 15px
-    h2
-      border-bottom 1px solid #EEE
-      font-size 1em
-      margin-bottom 5px
-      padding-bottom 2px
-    p
-      padding-left 10px
-      float left
-      font-size 0.8em
-    a
-      color rgb(12,131,235)
-      font-size 0.8em
-      float right
-  #col-right iframe
+    margin-right 0
+  .col-right iframe
     padding-left 10px
-    padding-right 45px
   #name1
     width 100%
     border-bottom 1px solid #EEE
@@ -189,9 +168,6 @@ section
       width 1.6em
       padding-left 10px
 
-#conditions, #treatments, #doctors, #clinics, #research
-  //padding-left 55px
-
 #research
   height 100px
 
@@ -199,9 +175,9 @@ section
   height 90px
   margin-bottom 8px
   p
+    float left
     width 95%
     margin-left 0.35em
-    float left
     font-size 1.3em
     color #888
   .logo
@@ -219,7 +195,6 @@ section
   top 110px
 
 #ask-form
-  position relative
   border-radius 0 6px 6px 6px
   float left
   width 300px
@@ -233,7 +208,6 @@ section
 #ask-button
   padding 10px
   border-radius 6px 0 0 6px
-  position relative
   float left
   width 142px
   height 1.45em
@@ -243,17 +217,14 @@ section
   background-image: -webkit-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
   background-image: -ms-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%);
   .logo
-    margin-left 1px
-    margin-top -1px
     float left
+    margin -1px 0 0 1px
     color #fff
     font-family 'arthrolife'
     font-size 1.3em
   p
-    padding-left 8px
-    padding-top 3px
+    float left
+    padding 3px 0 0 8px
     font-size 1em
     color #fff
-    float left
-
 
