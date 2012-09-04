@@ -8,7 +8,14 @@ function init() {
   askButton = document.querySelector('#ask-button');
 
   askButton.onclick = function(event) {
-    ask.classList.toggle('ask-show');
+    if (ask.classList)
+      ask.classList.toggle('ask-show');
+    else {
+      if (ask.className === 'ask-show')
+        ask.className = '';
+      else
+        ask.className += 'ask-show'
+    }
   };
 }
 
