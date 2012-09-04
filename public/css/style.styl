@@ -33,6 +33,7 @@ table
 
 html
   -webkit-font-smoothing antialiased
+  overflow-x hidden
 
 body
   font normal normal normal 16px 'Lucida Grande', 'Helvetica Neue', sans-serif
@@ -89,18 +90,24 @@ header
       a:hover
         color #fff
 
-.general-container-odd
+.section-heading
+  padding 10px 0 10px 0
+  background-color #f7f7f7 !important
+  h1
+    width 800px
+    margin 0 auto 0 auto
+    padding-left 50px
+    color #444
+    font-size 1.3em
+
+#footer-container
+  padding 10px 0 10px 0
   background-color #f7f7f7 !important
 
-.general-container
-  padding 10px 0 10px 0
-  background-color #fff
-
 footer
-  width 800px
+  width 770px
   margin 0 auto 0 auto
-  padding 5px 0 20px 0
-  border-top 1px solid #ccc
+  padding 5px 0 20px 30px
   font-size 0.8em
   color #9A9EA8
   p
@@ -109,18 +116,14 @@ footer
     color #bbb
     float right
     font-family 'arthrolife'
-    font-size 1.2em
+    font-size 1.3em
 
 section
   overflow auto
-  width 800px
+  width 780px
   margin 0 auto 0 auto
+  padding 10px 0 10px 20px
   clear both
-  h1
-    border-bottom 2px dotted rgba(0,0,0,0.1)
-    color #444
-    margin-bottom 10px
-    font-size 1.5em
   p
     float left
     margin 3px 0 0 15px
@@ -130,7 +133,7 @@ section
   .col
     float left
     width 45%
-    margin 5px 20px 0 15px
+    margin 0 20px 0 15px
     h2
       font-size 1em
       border-bottom 1px solid rgba(0,0,0,0.1)
@@ -149,13 +152,13 @@ section
     float right
     margin-right 0
   .col-right iframe
-    padding-left 10px
+    margin-left 15px
   #name2
     margin-bottom 5px
   #name2, #address, #phone, #fax
     clear both
   #address
-    padding-bottom 10px
+    margin-bottom 5px
   #contact
     padding-left 10px
   #email, #phone
@@ -181,6 +184,10 @@ section
   height 100px
 
 #about
+  width 800px
+  margin 0 auto 0 auto
+  padding 10px 0 10px 0
+  clear both
   overflow auto
   p
     float left
