@@ -41,7 +41,7 @@ body
   font-size 14px
 
 #about-container
-  padding-top 10px
+  padding 10px 0 10px 0
   background-color #ddd
 
 #header-container
@@ -89,6 +89,13 @@ header
       a:hover
         color #fff
 
+.general-container-odd
+  background-color #eee !important
+
+.general-container
+  padding 10px 0 10px 0
+  background-color #fff
+
 footer
   width 800px
   margin 0 auto 0 auto
@@ -105,13 +112,13 @@ footer
     font-size 1.2em
 
 section
+  overflow auto
   width 800px
   margin 0 auto 0 auto
   clear both
   h1
-    border-bottom 2px dotted #eee
+    border-bottom 2px dotted rgba(0,0,0,0.1)
     color #444
-    padding-top 10px
     margin-bottom 10px
     font-size 1.5em
   p
@@ -126,7 +133,7 @@ section
     margin 5px 20px 0 15px
     h2
       font-size 1em
-      border-bottom 1px solid #EEE
+      border-bottom 1px solid rgba(0,0,0,0.1)
       padding-bottom 2px
       margin-bottom 5px
     p
@@ -143,12 +150,8 @@ section
     margin-right 0
   .col-right iframe
     padding-left 10px
-  #name1
-    width 100%
-    border-bottom 1px solid #EEE
-    font-size 1em !important
+  #name2
     margin-bottom 5px
-    padding-bottom 2px
   #name2, #address, #phone, #fax
     clear both
   #address
@@ -178,11 +181,11 @@ section
   height 100px
 
 #about
-  height 90px
+  overflow auto
   p
     float left
     width 95%
-    margin-left 0.35em
+    margin 0 0 0 0.35em
     font-size 1.3em
     color #888
   .logo
