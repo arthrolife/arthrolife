@@ -12,6 +12,7 @@ server.set \views "#__dirname/../views"
 server.set 'view engine' \jade
 
 server.get \/ (request, response) -> response.render \index
+server.get \/tendinopathy (request, response) -> response.render \tendinopathy
 
 server.listen 8000
 
