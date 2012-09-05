@@ -34,16 +34,19 @@ function init() {
     http.open('POST', url, true);
     http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     http.onreadystatechange = function() {
-      if (http.readyState == 4 && http.status == 200) {
-        askName.value = '';
-        askPhone.value = '';
-        askEmail.value = '';
-        askQuestion.value = '';
-      }
+      if (http.readyState == 4 && http.status == 200)
+        setTimeout(clearAskValues, 3000);
     }
     http.send(params);
     toggleAskShow();
   }
+}
+
+function clearAskValues() {
+  askName.value = '';
+  askPhone.value = '';
+  askEmail.value = '';
+  askQuestion.value = '';
 }
 
 function hideAsk() {
