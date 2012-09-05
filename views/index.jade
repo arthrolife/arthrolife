@@ -5,12 +5,14 @@ body
       p Need help?
     #ask-form
       p Name
-      input(type='text')
+      input#ask-name(type='text')
+      p Phone
+      input#ask-phone(type='text')
       p Email
-      input(type='text')
+      input#ask-email(type='text')
       p Question
-      textarea(rows='4')
-      .button Submit
+      textarea#ask-question(rows='4')
+      #ask-submit Submit
 
   #header-container
     header
