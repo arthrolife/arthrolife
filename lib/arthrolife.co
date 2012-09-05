@@ -1,4 +1,5 @@
 express = require \express
+email   = require \email
 stylus  = require \stylus
 
 process.on \uncaughtException -> console.log it
@@ -13,7 +14,11 @@ server.set 'view engine' \jade
 
 server.get  \/     (request, response) -> response.render \index
 server.get  \/:doc (request, response) -> response.render request.params[\doc]
-server.post \/help (request, response) -> console.log request
+server.post \/help (request, response) ->
+  body = request.body{\name \phone \email \question}
+  mail = new email.Email(from: \support@arthrolife.com.au to: \help@arthrolife.com.au subject: \help body: body)
+  mail.send!
+  response.send 200
 
 server.listen 8000
 

@@ -4,6 +4,7 @@ description: 'arthrolife server'
 main: \lib/arthrolife
 version: \0.0.1
 dependencies:
+  email: \~0.2
   express: \~2.5
   jade: \~0.20
   stylus: \~0.28
