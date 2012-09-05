@@ -12,9 +12,9 @@ server.use express.static "#__dirname/../public"
 server.set \views "#__dirname/../views"
 server.set 'view engine' \jade
 
-server.get  \/     (request, response) -> response.render \index
-server.get  \/:doc (request, response) -> response.render request.params[\doc]
-server.post \/help (request, response) ->
+server.get  \/          (request, response) -> response.render \index
+server.get  \/docs/:doc (request, response) -> response.render request.params[\doc]
+server.post \/help      (request, response) ->
   body = request.body{\name \phone \email \question}
   mail = new email.Email(from: \support@arthrolife.com.au to: \help@arthrolife.com.au subject: \help body: JSON.stringify(body))
   mail.send!
