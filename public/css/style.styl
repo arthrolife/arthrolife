@@ -53,7 +53,7 @@ body, textarea
 
 header
   width 800px
-  height 250px
+  height 100%
   margin 0 auto 0 auto
   background-color #000
   background-image url('../img/knee-xray.jpg')
@@ -90,6 +90,16 @@ header
       a:hover
         color #fff
 
+#header-container.doc
+  height 50px
+header.doc
+  height 100%
+  background-image none
+  .logo
+    font-size 3em
+  h1
+    margin-top -2px
+
 .section-heading
   padding 10px 0 10px 0
   background-color #f7f7f7 !important
@@ -103,6 +113,10 @@ header
 #footer-container
   padding 10px 0 10px 0
   background-color #f7f7f7 !important
+
+footer.doc
+  width 800px
+  padding-left 0
 
 footer
   width 770px
@@ -118,6 +132,10 @@ footer
     font-family 'arthrolife'
     font-size 1.3em
 
+section.doc
+  width 800px
+  padding-left 0
+
 section
   overflow auto
   width 770px
@@ -126,19 +144,21 @@ section
   clear both
   h1
     font-size 1.3em
-    padding-bottom 5px
+    margin-bottom 5px
+    border-bottom 2px dotted #eee
   h2
     margin-left 15px
     font-size 1.15em
-  .doc-p
-    font-size 0.9em
-    padding-bottom 5px
+    border-bottom 1px solid #eee
   p
     float left
     margin 3px 0 0 15px
     font-size 1em
+  p.doc
+    margin 10px 0 10px 15px
   ul
-    margin 5px 0 10px 40px
+    clear both
+    padding 5px 0 10px 40px
     list-style disc
   li
     clear both
