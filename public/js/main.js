@@ -3,19 +3,29 @@ window.onload = init;
 var ask = null;
 var askButton = null;
 
+if (!document.querySelector)
+  (function(d){d=document,a=d.styleSheets[0]||d.createStyleSheet();d.querySelector=function(e){a.addRule(e,'f:b');for(var l=d.all,b=0,c=[],f=l.length;b<f;b++)l[b].currentStyle.f&&c.push(l[b]);a.removeRule(0);return c}})()
+
+function last(o) {
+  if (o instanceof Array) return o[o.length - 1];
+  return o;
+}
+
 function init() {
-  body = document.querySelector('body');
-  ask = document.querySelector('#ask');
-  askButton = document.querySelector('#ask-button');
-  askName = document.querySelector('#ask-name');
-  askPhone = document.querySelector('#ask-phone');
-  askEmail = document.querySelector('#ask-email');
-  askQuestion = document.querySelector('#ask-question');
-  askSubmit = document.querySelector('#ask-submit');
+  body = last(document.querySelector('body'));
+  ask = last(document.querySelector('#ask'));
+  askButton = last(document.querySelector('#ask-button'));
+  askName = last(document.querySelector('#ask-name'));
+  askPhone = last(document.querySelector('#ask-phone'));
+  askEmail = last(document.querySelector('#ask-email'));
+  askQuestion = last(document.querySelector('#ask-question'));
+  askSubmit = last(document.querySelector('#ask-submit'));
 
   body.onclick = function(event) {
-    if (event.target) {
-      var parent = event.target.parentNode;
+    event = (event) ? event : window.event;
+    var target = (event.target) ? event.target : event.srcElement;
+    if (target) {
+      var parent = target.parentNode;
       if (parent && parent.id !== 'ask' && parent.id !== 'ask-button' && parent.id !== 'ask-form')
         hideAsk();
     }
@@ -23,6 +33,7 @@ function init() {
 
   askButton.onclick = toggleAskShow;
   document.onkeydown = function(event) {
+    event = (event) ? event : window.event;
     if (event.keyCode == 27) hideAsk();
   };
 
@@ -35,7 +46,7 @@ function init() {
     http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
     http.onreadystatechange = function() {
       if (http.readyState == 4 && http.status == 200)
-        setTimeout(clearAskValues, 3000);
+        setTimeout(clearAskValues, 2500);
     }
     http.send(params);
     toggleAskShow();
@@ -63,7 +74,7 @@ function toggleAskShow() {
     if (ask.className === 'ask-show')
       ask.className = '';
     else
-      ask.className += 'ask-show'
+      ask.className = 'ask-show';
   }
 }
 
