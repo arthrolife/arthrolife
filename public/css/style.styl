@@ -272,10 +272,11 @@ section
   height 100%
 
 #ask
+  display none
   z-index 99
-  position absolute
-  right -300px
-  width 440px
+  position relative
+  float right
+  width 8.5em
   top 6.563em
   transition right 2s
   -moz-transition right 2s
@@ -285,8 +286,11 @@ section
   right 0.625em !important
 
 #ask-form
+  overflow-x hidden
   border-radius 0 0.375em 0.375em 0.375em
-  float left
+  position absolute
+  top 0
+  left 8.5em
   width 18.750em
   padding-top 0.188em
   background-color rgb(38,168,255)
@@ -325,7 +329,9 @@ section
 #ask-button
   padding 0.625em
   border-radius 0.375em 0 0 0.375em
-  float left
+  position absolute
+  top 0
+  left 0
   width 7.500em
   height 1.45em
   background-color rgb(38,168,255)
