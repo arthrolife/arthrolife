@@ -291,17 +291,22 @@ section
 #ask-form
   opacity 0
   display none
+  margin-bottom 1px
   position relative
   float right
   border-radius 0 0 0 0.375em
   width 18em
   padding 10px
-  background-color rgb(38,168,255)
-  background-image linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  border-left 1px solid #63B8FF
+  border-right 1px solid #63B8FF
+  border-bottom 1px solid #63B8FF
+  box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
+  background-color #5CACEE
   background-image -o-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
-  background-image -moz-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
-  background-image -webkit-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
-  background-image -ms-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
+  background-image -webkit-linear-gradient(bottom, #5CACEE 19%, rgb(38,168,255) 60%)
+  background-image -mozilla-linear-gradient(bottom, #5CACEE 19%, rgb(38,168,255) 60%)
+  background-image -ms-linear-gradient(bottom, #5CACEE 19%, rgb(38,168,255) 60%)
+  text-shadow 1px 1px #4F94CD
   p
     padding-bottom 5px
     color #fff
@@ -311,13 +316,14 @@ section
     width 100%
     padding 5px
     margin-bottom 10px
-    border 0.078em solid lightsteelblue
+    border 1px solid #63B8FF
+    box-shadow 1px 1px #C6E2FF, inset 1px 1px 1px #4F94CD
     border-radius 0.313em
   textarea
     width 100%
     padding 5px
-    border 0.078em solid lightsteelblue
-    border-radius 0.250em
+    border 1px solid #63B8FF
+    box-shadow 1px 1px #C6E2FF, inset 1px 1px 1px #4F94CD
     border-radius 0.313em
     resize none
     font-size 0.8em
@@ -325,18 +331,25 @@ section
     float right
     border-radius 0.250em
     color #fff
-    border 1px solid lightsteelblue
     margin 5px 0 0 0.625em
     padding 0.313em 0.500em 0.313em 0.500em
+    border 1px solid #63B8FF
+    box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
+    background-color #5CACEE
 
 #ask-button
   clear both
-  padding 5px 10px 5px 5px
+  border-left 1px solid #63B8FF
+  border-right 1px solid #63B8FF
+  border-bottom 1px solid #63B8FF
+  box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
+  padding 5px 10px 3px 5px
   border-radius 0 0 0.375em 0.375em
   position relative
   height 18px
   float right
-  background-color rgb(12,131,235)
+  background-color #5CACEE
+  text-shadow 1px 1px #4F94CD
   .logo
     padding-left 5px
     float left
