@@ -62,6 +62,7 @@ header
   background-repeat no-repeat
   -webkit-transition opacity 2s ease-in
   h1
+    margin 45px 0 10px 0
     float right
     font-size 3em
     font-family 'Nunito'
@@ -69,7 +70,7 @@ header
   h2
     clear both
     float right
-    padding 3.750em 2.917em 0 0
+    padding 2em 2.917em 0 0
     font-size 1.5em
     color #fff
   .logo
@@ -271,28 +272,30 @@ section
   width 100%
   height 100%
 
+#ask-container
+  margin 0 auto 0 auto
+  width 800px
+
 #ask
-  display none
   z-index 99
   position relative
   float right
-  width 8.5em
-  top 6.563em
-  transition right 2s
-  -moz-transition right 2s
-  -webkit-transition right 2s
 
 .ask-show
-  right 0.625em !important
+  opacity 1 !important
+  display block !important
+
+.input-container
+  margin 0 11px 0 0
 
 #ask-form
-  overflow-x hidden
-  border-radius 0 0.375em 0.375em 0.375em
-  position absolute
-  top 0
-  left 8.5em
-  width 18.750em
-  padding-top 0.188em
+  opacity 0
+  display none
+  position relative
+  float right
+  border-radius 0 0 0 0.375em
+  width 18em
+  padding 10px
   background-color rgb(38,168,255)
   background-image linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
   background-image -o-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
@@ -300,19 +303,19 @@ section
   background-image -webkit-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
   background-image -ms-linear-gradient(bottom, rgb(12,131,235) 19%, rgb(38,168,255) 60%)
   p
-    padding 0.625em
+    padding-bottom 5px
     color #fff
   input[type="text"]
+    display inline
     font-size 0.8em
-    width 20.938em
-    padding 0.391em
-    margin-left 0.781em
+    width 100%
+    padding 5px
+    margin-bottom 10px
     border 0.078em solid lightsteelblue
     border-radius 0.313em
   textarea
-    width 20.938em
-    padding 0.391em
-    margin-left 0.781em
+    width 100%
+    padding 5px
     border 0.078em solid lightsteelblue
     border-radius 0.250em
     border-radius 0.313em
@@ -322,28 +325,30 @@ section
     float right
     border-radius 0.250em
     color #fff
-    border 0.063em solid lightsteelblue
-    margin 0.313em 0.625em 0.625em 0.625em
+    border 1px solid lightsteelblue
+    margin 5px 0 0 0.625em
     padding 0.313em 0.500em 0.313em 0.500em
 
 #ask-button
-  padding 0.625em
-  border-radius 0.375em 0 0 0.375em
-  position absolute
-  top 0
-  left 0
-  width 7.500em
-  height 1.45em
-  background-color rgb(38,168,255)
+  clear both
+  padding 5px 10px 5px 5px
+  border-radius 0 0 0.375em 0.375em
+  position relative
+  height 18px
+  float right
+  background-color rgb(12,131,235)
   .logo
+    padding-left 5px
     float left
-    margin -0.063em 0 0 0.063em
     color #fff
     font-family 'arthrolife'
-    font-size 1.3em
+    font-size 1em
+  #help
+    padding 1px 0 0 15px
+    font-size 0.9em
   p
     float left
-    padding 0.188em 0 0 0.500em
-    font-size 1em
+    padding-left 5px
+    font-size 0.8em
     color #fff
 

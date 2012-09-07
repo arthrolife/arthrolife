@@ -14,6 +14,7 @@ function last(o) {
 function init() {
   body = last(document.querySelector('body'));
   ask = last(document.querySelector('#ask'));
+  askForm = last(document.querySelector('#ask-form'));
   askButton = last(document.querySelector('#ask-button'));
   askName = last(document.querySelector('#ask-name'));
   askPhone = last(document.querySelector('#ask-phone'));
@@ -26,7 +27,7 @@ function init() {
     var target = (event.target) ? event.target : event.srcElement;
     if (target) {
       var parent = target.parentNode;
-      if (parent && parent.id !== 'ask' && parent.id !== 'ask-button' && parent.id !== 'ask-form')
+      if (parent && parent.id !== 'ask' && parent.className !== 'input-container' && parent.id !== 'ask-button' && parent.id !== 'ask-form')
         hideAsk();
     }
   };
@@ -62,19 +63,19 @@ function clearAskValues() {
 
 function hideAsk() {
   if (ask.classList)
-    ask.classList.remove('ask-show');
+    askForm.classList.remove('ask-show');
   else
-    ask.className = '';
+    askForm.className = '';
 }
 
 function toggleAskShow() {
   if (ask.classList)
-    ask.classList.toggle('ask-show');
+    askForm.classList.toggle('ask-show');
   else {
-    if (ask.className === 'ask-show')
-      ask.className = '';
+    if (askForm.className === 'ask-show')
+      askForm.className = '';
     else
-      ask.className = 'ask-show';
+      askForm.className = 'ask-show';
   }
 }
 
