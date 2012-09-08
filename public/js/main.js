@@ -14,6 +14,7 @@ function last(o) {
 function init() {
   body = last(document.querySelector('body'));
   ask = last(document.querySelector('#ask'));
+  askFormContainer = last(document.querySelector('#ask-form-bottom'));
   askForm = last(document.querySelector('#ask-form'));
   askButton = last(document.querySelector('#ask-button'));
   askName = last(document.querySelector('#ask-name'));
@@ -62,20 +63,20 @@ function clearAskValues() {
 }
 
 function hideAsk() {
-  if (ask.classList)
-    askForm.classList.remove('ask-show');
+  if (askFormContainer.classList)
+    askFormContainer.classList.remove('ask-show');
   else
-    askForm.className = '';
+    askFormContainer.className = '';
 }
 
 function toggleAskShow() {
-  if (ask.classList)
-    askForm.classList.toggle('ask-show');
+  if (askFormContainer.classList)
+    askFormContainer.classList.toggle('ask-show');
   else {
-    if (askForm.className === 'ask-show')
-      askForm.className = '';
+    if (askFormContainer.className === 'ask-show')
+      askFormContainer.className = '';
     else
-      askForm.className = 'ask-show';
+      askFormContainer.className = 'ask-show';
   }
 }
 

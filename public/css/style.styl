@@ -62,7 +62,7 @@ header
   background-repeat no-repeat
   -webkit-transition opacity 2s ease-in
   h1
-    margin 45px 0 10px 0
+    margin-bottom 10px
     float right
     font-size 3em
     font-family 'Nunito'
@@ -70,7 +70,7 @@ header
   h2
     clear both
     float right
-    padding 2em 2.917em 0 0
+    padding 3em 2.917em 0 0
     font-size 1.5em
     color #fff
   .logo
@@ -282,24 +282,19 @@ section
   float right
 
 .ask-show
-  opacity 1 !important
-  display block !important
+  bottom 30px !important
 
 .input-container
   margin 0 11px 0 0
 
 #ask-form
-  opacity 0
-  display none
   margin-bottom 1px
   position relative
   float right
-  border-radius 0 0 0 0.375em
+  border-radius 0.375em
   width 18em
   padding 10px
-  border-left 1px solid #63B8FF
-  border-right 1px solid #63B8FF
-  border-bottom 1px solid #63B8FF
+  border 1px solid #63B8FF
   box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
   background-color #5CACEE
   text-shadow 1px 1px #4F94CD
@@ -340,17 +335,28 @@ section
   float left
   margin 0 10px 0 10px
 
+#ask-bottom
+  z-index 90
+  position fixed
+  bottom 0
+  width 800px
+
+#ask-form-bottom
+  z-index 99
+  position fixed
+  bottom -400px
+  width 800px
+  -webkit-transition bottom 2s ease-in
+
 #ask-button
-  clear both
-  padding 0 5px 0 5px
+  float right
+  padding 0 10px 0 5px
   border-left 1px solid #63B8FF
   border-right 1px solid #63B8FF
-  border-bottom 1px solid #63B8FF
+  border-top 1px solid #63B8FF
   box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
-  border-radius 0 0 0.375em 0.375em
-  position relative
+  border-radius 0.375em 0.375em 0 0
   height 1.55em
-  float right
   background-color #5CACEE
   text-shadow 1px 1px #4F94CD
   .logo
@@ -363,7 +369,7 @@ section
     padding 6px 0 5px 5px
     font-size 0.9em
   p
-    padding 5px 5px 5px 5px
+    padding 5px
     float left
     padding-left 5px
     font-size 0.8em
