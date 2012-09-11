@@ -70,7 +70,7 @@ header
   h2
     clear both
     float right
-    padding 3em 2.917em 0 0
+    padding 30px 2.917em 0 0
     font-size 1.5em
     color #fff
   .logo
@@ -182,16 +182,23 @@ section
       padding-bottom 0.125em
       margin-bottom 0.313em
     .more
-      position relative
+      float left
       font-size 0.8em
-      float right
-      margin-top -2.031em
+      border-radius 0.250em
+      color #fff
+      margin 5px 0 0 1.172em
+      padding 0.313em 0.500em 0.313em 0.500em
+      border 1px solid #63B8FF
+      box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
+      background-color #5CACEE
+    a
+      text-decoration none
     p
       float left
       font-size 0.8em
       margin 0.234em 0 0 1.172em
     a:link, a:visited
-      color rgb(12,131,235)
+      color white
 
   .col-right
     float right
@@ -273,7 +280,6 @@ section
   height 100%
 
 #ask-container
-  display none
   margin 0 auto 0 auto
   width 800px
 
@@ -336,13 +342,8 @@ section
   float left
   margin 0 10px 0 10px
 
-#ask-bottom
-  z-index 90
-  position fixed
-  bottom 0
-  width 800px
-
 #ask-form-bottom
+  display none
   z-index 99
   position fixed
   bottom -400px
@@ -350,13 +351,13 @@ section
   -webkit-transition bottom 2s ease-in
 
 #ask-button
+  clear both
   float right
   padding 0 10px 0 5px
-  border-left 1px solid #63B8FF
-  border-right 1px solid #63B8FF
-  border-top 1px solid #63B8FF
+  margin-top 30px
+  border 1px solid #63B8FF
   box-shadow inset 1px 1px #C6E2FF, 1px 1px 1px #4F94CD
-  border-radius 0.375em 0.375em 0 0
+  border-radius 0.375em
   height 1.55em
   background-color #5CACEE
   text-shadow 1px 1px #4F94CD
