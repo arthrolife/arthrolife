@@ -241,6 +241,20 @@ section
     font-size 0.8em
   .research-contact
     margin-top  0.625em
+  #research-contact
+    clear both
+    overflow auto
+    margin-bottom 0.313em
+  .logo
+    color #666
+    float left
+    clear both
+    margin-top 0.188em
+    padding-left 0.938em
+    width 1.3em
+    font-family 'arthrolife'
+  a
+    float left
   ul
     clear both
     padding-top 0.313em
@@ -280,19 +294,18 @@ section
   margin 0 auto 0 auto
   width 800px
 
-#ask
-  z-index 99
-  position relative
-  float right
-
-.ask-show
-  bottom 30px !important
+.ask-form-show
+  margin-top 10px !important
 
 .input-container
   margin 0 11px 0 0
 
 #ask-form
+  -webkit-transition margin-top 2s ease-in
+  -mozilla-transition margin-top 2s ease-in
+  margin-top -400px
   margin-bottom 1px
+  z-index 99
   position relative
   float right
   border-radius 0.375em
@@ -340,12 +353,10 @@ section
   margin 0 10px 0 10px
 
 #ask-form-bottom
-  display none
   z-index 99
-  position fixed
-  bottom -400px
+  position absolute
+  top -400px
   width 800px
-  -webkit-transition bottom 2s ease-in
 
 #ask-button
   clear both

@@ -2,21 +2,20 @@
   .curved-border.curved-border-hack
 
 #ask-container
-  #ask-form-bottom
-    #ask-form.curved-border
-      p Name
-      .input-container
-        input#ask-name(type='text')
-      p Phone
-      .input-container
-        input#ask-phone(type='text')
-      p Email
-      .input-container
-        input#ask-email(type='text')
-      p Question
-      .input-container
-        textarea#ask-question(rows='4')
-      #ask-submit.curved-border Submit
+  #ask-form.curved-border
+    p Name
+    .input-container
+      input#ask-name(type='text')
+    p Phone
+    .input-container
+      input#ask-phone(type='text')
+    p Email
+    .input-container
+      input#ask-email(type='text')
+    p Question
+    .input-container
+      textarea#ask-question(rows='4')
+    #ask-submit.curved-border Submit
 
 #main-container
   #header-container
@@ -121,7 +120,9 @@
         | for musculoskeletal conditions and is actively involved in research
         | within this medical field.
       p.research-contact For information contact:
-      a(href='mailto:research@arthrolife.com.au') research@arthrolife.com.au
+      #research-contact
+        .logo &#x24;
+        a(href='mailto:research@arthrolife.com.au') research@arthrolife.com.au
     .col.col-right
       p Our current research projects include -
       ul
